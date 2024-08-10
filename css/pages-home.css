@@ -3,6 +3,7 @@
   height: 50px;
   right: 0;
   top: -15px;
+  cursor: pointer;
 }
 
 .question-card__title {

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./form.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+    <main>
+      <fieldset>
+        <form data-js="form">
+          <label for="yourQuestion">Your question:</label>
+          <textarea
+            data-js="your-question"
+            name="yourQuestion"
+            id="yourQuestion"
+            rows="10"
+            cols="50"
+            maxlength="150"
+            placeholder="Enter the question you want to add to the quiz app"
+          ></textarea>
+          <p class="remaining-characters">
+            <output data-js="remaining-characters">150</output>
+            characters left
+          </p>
+
+          <label for="yourAnswer">Your answer:</label>
+          <textarea
+            data-js="your-answer"
+            name="yourAnswer"
+            id="yourAnswer"
+            rows="10"
+            cols="50"
+            maxlength="150"
+            placeholder="Enter the answer"
+          ></textarea>
+          <p class="remaining-characters">
+            <output data-js="remaining-characters2">150</output>
+            characters left
+          </p>
+
+          <label for="tag">Tag:</label>
+          <input type="text" data-js="tag" name="tag" id="tag" />
+
+          <button type="submit">Submit</button>
+        </form>
+      </fieldset>
+    </main>
+
+    <footer class="footer">
+      <a href="index.html" class="footer__link">
+        <img class="footer__icon" src="./assets/home.png" alt="home" />
+      </a>
+      <a href="bookmark.html" class="footer__link">
+        <img
+          class="footer__icon"
+          src="./assets/bookmark_transparent.png"
+          alt="bookmark filled"
+        />
+      </a>
+      <a href="form.html" class="footer__link footer__link--active">
+        <img
+          class="footer__icon"
+          src="./assets/add_filled.png"
+          alt="add-question filled"
+        />
+      </a>
+      <a href="profile.html" class="footer__link">
+        <img class="footer__icon" src="./assets/profile.png" alt="profile" />
+      </a>
+    </footer>
+  </body>
+</html>
