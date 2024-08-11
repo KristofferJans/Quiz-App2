@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <header>
@@ -14,16 +15,27 @@
     <main>
       <section class="question-card">
         <img
-          class="question-card__icon question-card__icon--active"
-          src="./assets/bookmark_filled.png"
-          alt="bookmark filled"
+          class="question-card__icon"
+          src="./assets/bookmark.png"
+          alt="bookmark"
         />
-        <h2 class="question-card__question">Why is accessibility important?</h2>
-        <button class="question-card__button">show answer</button>
-        <p class="question-card__answer"></p>
+        <h2 class="question-card__title">
+          Welches Wort wurde zum Jugendwort des Jahres 2023 gewählt?
+        </h2>
+        <button
+          class="question-card__button"
+          type="button"
+          data-js="question-card__button"
+        >
+          show answer
+        </button>
+        <p class="question-card__answer hidden" data-js="question-card__answer">
+          goofy
+        </p>
         <div class="question-card__tags">
-          <div class="question-card__tag">#html</div>
-          <div class="question-card__tag">#accessibility</div>
+          <div class="question-card__tag">#goofy</div>
+          <div class="question-card__tag">#Side Eye</div>
+          <div class="question-card__tag">#NPC</div>
         </div>
       </section>
     </main>
